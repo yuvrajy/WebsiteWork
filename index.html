@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maji Wells</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Customizable Image URLs -->
+    <script>
+        const homeImage = 'https://example.com/home.jpg';
+        const aboutImage = 'https://example.com/about.jpg';
+        const loginImage = 'https://example.com/login.jpg';
+    </script>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#login">Login</a></li>
+            <li><a href="#about">About Us</a></li>
+        </ul>
+    </nav>
+
+    <div id="home" class="section">
+        <img id="homeImage" alt="Home Image">
+        <h1>Welcome to Maji Wells</h1>
+        <p>Our mission is to provide clean water to communities in need.</p>
+    </div>
+
+    <div id="login" class="section">
+        <img id="loginImage" alt="Login Image">
+        <h2>Login</h2>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+    <div id="about" class="section">
+        <img id="aboutImage" alt="About Us Image">
+        <h2>About Us</h2>
+        <p>Maji Wells is dedicated to improving access to clean water around the world.</p>
+    </div>
+
+    <script>
+        document.getElementById('homeImage').src = homeImage;
+        document.getElementById('loginImage').src = loginImage;
+        document.getElementById('aboutImage').src = aboutImage;
+    </script>
+</body>
+</html>
